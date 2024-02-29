@@ -1,0 +1,6 @@
+MongoDB
+
+-> Environment Variables -> Path -> New -> Copy the path ->  Ok
+
+-> Services -> MongoDB Sever -> Start
+

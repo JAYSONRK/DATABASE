@@ -1,0 +1,46 @@
+MongoDB
+
+*BSON
+
+*Structure:
+	Table -> Collection
+	Row -> Document
+	Column -> Field
+
+1) Create Database,Collections and Documents in CMD.
+	To initialize databse-> mongod
+	To initialize shell-> mongosh
+	To show databses->  show dbs
+	To create/use database-> use <databse name>
+	To insert document-> db.<collection name>.insertOne({name:"abc", type:"bcd", number:10, active:true})
+	To check active database->db
+	To display collection name->show collections
+	To display collection field ->db.<collection name>.find()
+	To exit->CTR+C(2times) or quit()
+
+2) CRUD 
+-Create Documents
+	To insert one document-> db.<collection name>.insertOne({name:"abc", type:"bcd", number:10, active:true})
+	To insert many -> insertMany([{},{},{}])
+
+-Read Documents
+	To read-> db.<collection>.find(query, projection)
+	query -> db.stack.find({name:"nodejs})
+	projection -> db.stack.find({name:"nodejs"}, {name:1})(0-false, 1-true)
+	limit -> db.stack.find({active:true}).limit(1)
+	findOne -> db.stack.findOne({active:true})
+	skip -> db.stack.find({active:true}).limit(1).skip(1)
+
+-Update Documents
+	To Update one-> db.<collection>.updateOne(<filter>, <update>)
+		     -> db.stack.updateOne({name:"nodejs"},{$set:{type:"fullstack"}})
+
+	To Update many-> db.<collection>.updateMany(<filter>, <update>)
+	             -> db.stack.updateMany({type:"front end"},{$set:{active:false}})
+
+-Delete Documents
+	To Delete -> db.<collection>.updateOne(delete_criteria)
+		  -> db.stack.deleteMany({type:"front end"})
+
+	To Delete Everythng -> db.stack.deleteMany({})
+	

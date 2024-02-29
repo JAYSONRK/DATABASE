@@ -1,0 +1,50 @@
+MySQL:-http://localhost/phpmyadmin/
+
+1) Create Connection
+
+2) Creating a Database(mydb)
+
+3) Inserting Form data to mySQL
+
+3) Accessing data from database and rendering in browser using EJS.
+
+4) Delete data from mySQL
+
+5) Update data from mySQL
+
+4) Insert Into Table
+	*(insert one row )
+	*(inser multiple row)
+	*(insert extra row)
+
+5) Selecting From a Table
+	*(select entire table)
+	*(select columns from table)
+	*(select to display field)
+
+6) MySQL Where
+	*(Select With a Filter)
+	*(Wildcard Characters)
+
+7) MySQL Order By
+	*(Sort the Result)
+	*(Order by descending)
+
+8) MySQL Delete row
+
+9) MySQL Drop Table
+	*(Delete a Table)
+	*(Drop Only if Exist)
+
+10) MySQL Update
+
+11) MySQL Limit
+	*(Limit the Result)
+	*(Start From Another Position(OFFSET))
+	*(Shorter Syntax(LIMIT 2, 5))
+
+12) MySQL Join
+	*(Join Two or More Tables)
+	*(Left Join)
+	*(Right Join)
+

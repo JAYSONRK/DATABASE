@@ -1,0 +1,29 @@
+Mongoose(geeksforgeeks)
+mongodb://127.0.0.1:27017/<collection>
+
+1) Connection to database
+To create package.json->npm init -y
+->npm i mongoose
+
+2) Create/Insert Collection
+Schema and Modals
+->save()
+->insert()
+
+3) To read Collection
+->find
+ a)Comparision operator in MongoDB
+ b)Logical operator in MongoDB
+ c)Sorting and Couting -> count(), sort("<name>:1 or-1")
+
+4) Update Document
+->update()
+
+
+4) Delete Document
+->delete()
+
+5) Validation
+ a)Schema Inbuilt-validation
+ b)Schema Custom-validation
+ c) npm validation ->  validator.js

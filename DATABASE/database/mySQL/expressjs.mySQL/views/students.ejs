@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students</title>
+</head>
+<body>
+    <h1>Students</h1>
+    <table border="1" width="100%">
+        <tr>
+            <th>S.No</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Mobile No.</th>
+            <th>Actions</th>
+        </tr>
+        <% if(students.length > 0) { %>
+            <% for(let i=0; i<students.length; i++) { %>
+                <tr>
+                    <td><%- students[i].id %></td>
+                    <td><%- students[i].Name %></td> 
+                    <td><%- students[i].Email %></td>
+                    <td><%- students[i].Mobile %></td>
+                    <!-- To delete data -->
+                    <td><a href="/delete-student?id=<%- students[i].id %>">Delete</a>
+                    <!-- To update data -->
+                    <a href="/update-student?id=<%- students[i].id %>">Update</a></td>
+                </tr>
+            <% } %>
+        <% } else { %>
+            <tr>
+                <td colspan="4">Data not Found</td> <!-- colspan should match the number of columns in the table -->
+            </tr>
+        <% } %>
+    </table>
+</body>
+</html>
